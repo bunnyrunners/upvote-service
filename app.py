@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 
 # Path to SQLite on Render persistent disk
-DB_PATH = '/data/reddit_posts.db'
+DB_PATH = '"/tmp/reddit_posts.db"
 
 
 def get_sqlite_connection():
