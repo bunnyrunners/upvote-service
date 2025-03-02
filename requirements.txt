@@ -1,0 +1,4 @@
+Flask
+schedule
+requests
+airtable-python-wrapper
