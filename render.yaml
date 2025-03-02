@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: upvote-service
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    disk:
+      name: reddit-db
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
